@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Store</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+</head>
+<body>
+
+<!-- Menu -->
+	<div class="ui container-fluid">
+		<div class="ui inverted segment" style="border-radius: 0;">
+			<div class="ui inverted secondary menu">
+				<div class="header item">
+					<h1 style="color: #008080;">Book Store App</h1>
+					</div>
+				<a href='/' class="active right aligned item" style="font-size: 1.2rem; margin: 0 1rem 0 1rem">Home</a>
+				<a href={{ url_for('books') }} class="item" style="font-size: 1.2rem; margin: 0 1rem 0 1rem">Books</a>
+				<a href={{ url_for('add') }} class="item" style="font-size: 1.2rem; margin: 0 2rem 0 1rem">Add New</a>
+			</div>
+		</div>
+	</div>

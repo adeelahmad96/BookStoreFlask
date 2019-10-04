@@ -1,0 +1,53 @@
+{% include 'menu.html' %}
+
+	<!-- FORM -->
+	<div class="container" style="margin-top: 5rem;">
+		<div class="ui one column center aligned grid">
+			<form class="ui twelve wide mobile eight wide tablet seven wide computer column form segment" action="{{ url_for('add') }}" method="post">
+				<div class="ui two column grid inline field">
+					<label class="five wide right aligned column" for="name">Book Name</label>
+					<input class="nine wide column" type="text" name="name" , placeholder="Book Name">
+				</div>
+				<div class="ui two column grid inline field">
+					<label class="five wide right aligned column" for="author">Author</label>
+					<input class="nine wide column" type="text" name="author" , placeholder="Author">
+				</div>
+				<div class="ui two column grid inline field">
+					<label class="five wide right aligned column" for="price">Price</label>
+					<input class="nine wide column" type="text" name="price" , placeholder="Price">
+				</div>
+				<div class="ui two column grid inline field">
+					<label class="five wide right aligned column" for="image">Image URL</label>
+					<input class="nine wide column" type="text" name="image" , placeholder="Image URL">
+				</div>
+				<div class="ui two column grid inline field">
+					<label class="five wide right aligned column" for="id">ISBN</label>
+					<input class="nine wide column" type="text" name="id" , placeholder="ISBN">
+				</div>
+				<div class="ui two column grid inline field">
+					<div class="five wide right aligned column"></div>
+					<button class="ui button nine wide column" type="submit">Add</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+	<!--<form action="{{ url_for('add') }}" method="post">
+		<label for="id">Id</label>
+		<input type="text" name="id" , placeholder="Id">
+		<label for="name">Name</label>
+		<input type="text" name="name" , placeholder="Name">
+		<label for="author">Author</label>
+		<input type="text" name="author" , placeholder="Author">
+		<label for="price">Price</label>
+		<input type="text" name="price" , placeholder="Price">
+		<label for="image">Image URL</label>
+		<input type="text" name="image" , placeholder="Image URL">
+		<input type="submit" name="submit" value="Submit">
+	</form>-->
+</body>
+</html>
